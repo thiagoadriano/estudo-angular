@@ -1,0 +1,6 @@
+<h2>Lista de Pessoas</h2>
+<ul *ngFor="let pessoa of pessoas">
+  <li>{{pessoa}}</li>
+</ul>
+<input type="text" [(ngModel)]="nome" (keyup)="logger()">
+<p>{{nome}}</p>
