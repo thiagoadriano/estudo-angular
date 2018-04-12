@@ -22,4 +22,8 @@ export class ListaPessoaComponent implements OnInit {
     console.log(this.nome);
   }
 
+  enviarNome() {
+    this.service.setPessoa(this.nome);
+  }
+
 }
