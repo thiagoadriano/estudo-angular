@@ -3,6 +3,6 @@
 <button (click)="enviarNome()">Enviar Nome</button>
 <p>{{nome}}</p>
 
-<ul *ngFor="let pessoa of pessoas">
-  <li>{{pessoa}}</li>
+<ul>
+  <li *ngFor="let pessoa of pessoas, let i = index">{{pessoa}}</li>
 </ul>
