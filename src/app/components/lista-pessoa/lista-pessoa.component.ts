@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PessoasService } from './pessoas-service';
+import { PessoasService, Pessoa } from './pessoas-service';
 
 @Component({
   selector: 'app-lista-pessoa',
@@ -8,17 +8,17 @@ import { PessoasService } from './pessoas-service';
   providers: [PessoasService]
 })
 export class ListaPessoaComponent implements OnInit {
-  pessoas:Array<string> = [];
-  nome:string = 'Thiago';
+  pessoas: Array<Pessoa> = [];
+  nome = '';
 
-  constructor(public service:PessoasService) {
+  constructor(public service: PessoasService) {
     this.pessoas = this.service.getPessoas();
   }
 
   ngOnInit() {
   }
 
-  logger(){
+  logger() {
     console.log(this.nome);
   }
 

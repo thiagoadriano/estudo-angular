@@ -4,5 +4,5 @@
 <p>{{nome}}</p>
 
 <ul>
-  <li *ngFor="let pessoa of pessoas, let i = index">{{pessoa}}</li>
+  <li *ngFor="let pessoa of pessoas, let i = index; trackBy: myTrack">{{pessoa.nome}}</li>
 </ul>
