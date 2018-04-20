@@ -14,3 +14,29 @@
   <p *ngSwitchDefault>Não Tem</p>
 </div>
 <button (click)="incrementoSwitch()">Incrementa</button>
+
+<p [class.cor-fundo]="valorClassBinding">Conteúdo</p>
+
+<p [ngClass]="{'teste1': valorClassBinding, 'teste2': !valorClassBinding}">Outro teste de classe</p>
+
+<button (click)="aumenta()">aumentar texto</button>
+<p [style.font-size]="valorFonte">Teste com Style</p>
+
+<p [ngStyle]="{'font-size': tamanho > 30 ? tamanho * 2 + 'px': 10 + 'px', 'color': 'red'}">Teste novo</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>
+        <ng-content select=".titulo"></ng-content>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <ng-content select=".conteudo"></ng-content>
+      </td>
+    </tr>
+  </tbody>
+</table>

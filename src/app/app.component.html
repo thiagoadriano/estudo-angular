@@ -5,4 +5,24 @@
   <button (click)="enviarMsg()">Enviar Alerta</button>
   <app-lista-pessoa></app-lista-pessoa>
 </div>
-<app-diretivas></app-diretivas>
+
+<app-diretivas>
+
+  <p [ngStyle]="{'margin': 0}">Conteúdo das demais coisas</p>
+  <p [style.margin]="0">E toma informação</p>
+
+  <p class="conteudo">
+    Informações que irão aparecer
+  </p>
+
+  <p class="conteudo">
+     novos dados
+    </p>
+
+  <h2 class="titulo">
+      Título da tabela
+  </h2>
+</app-diretivas>
+
+
+<app-inputs></app-inputs>

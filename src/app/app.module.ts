@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ListaPessoaComponent } from './components/lista-pessoa/lista-pessoa.component';
 import { AlertaService } from './services/alerta.service';
 import { DiretivasComponent } from './components/diretivas/diretivas.component';
+import { InputsComponent } from './components/inputs/inputs.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ListaPessoaComponent,
-    DiretivasComponent
+    DiretivasComponent,
+    InputsComponent
   ],
   imports: [
     BrowserModule,
