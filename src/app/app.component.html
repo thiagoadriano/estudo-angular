@@ -1,10 +1,11 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div>
   <h1>{{ title }}</h1>
+  <h2>Parte Básica Bindings</h2>
   <img [src]="foto">
   <button (click)="enviarMsg()">Enviar Alerta</button>
   <app-lista-pessoa></app-lista-pessoa>
 </div>
+<hr>
 
 <app-diretivas>
 
@@ -20,9 +21,16 @@
     </p>
 
   <h2 class="titulo">
-      Título da tabela
+    ng-content
   </h2>
 </app-diretivas>
+<hr>
 
+<h1>Bindings customizados</h1>
+<app-inputs [menu]="desenvolvimento" (itemClicado)="valorPassado($event)"></app-inputs>
+<hr>
 
-<app-inputs></app-inputs>
+<app-formulario></app-formulario>
+<hr>
+
+<app-injecao></app-injecao>

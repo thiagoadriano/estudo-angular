@@ -1,1 +1,28 @@
+<ul>
+  <li *ngFor="let item of menu">
+    <a href="#" (click)="enviarNome(item)">{{item}}</a>
+  </li>
+</ul>
+
+
+<br><br>
 <button (click)="logClick($event)">Clica que tem log</button>
+<input #input (keyup)="metodoKey(input.value)">
+<br><br>
+
+<input type="password" #senhaIpt (keyup)="validaSenha(senhaIpt.value)" (keyup.enter)="enviarSenha(senhaIpt.value)">
+<br>
+<button [disabled]="!habilitarBotao" (click)="enviarSenha(senhaIpt.value)">Clica Vai</button>
+
+<br><br>
+<input type="text" #itemIpt [(ngModel)]="inputItem" (keyup.enter)="enviarItem()">
+<ul>
+  <li *ngFor="let item of itens">
+    {{item}} <span (click)="removeItem(item)">X</span>
+  </li>
+</ul>
+
+
+<br><br>
+<input type="date" #idadeIpt (blur)="enviaIdade(idadeIpt.value)">
+<p>Idade é {{idade}}</p>

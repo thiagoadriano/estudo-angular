@@ -7,6 +7,8 @@ import { ListaPessoaComponent } from './components/lista-pessoa/lista-pessoa.com
 import { AlertaService } from './services/alerta.service';
 import { DiretivasComponent } from './components/diretivas/diretivas.component';
 import { InputsComponent } from './components/inputs/inputs.component';
+import { FormularioComponent } from './components/formulario/formulario.component';
+import { InjecaoComponent } from './components/injecao/injecao.component';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { InputsComponent } from './components/inputs/inputs.component';
     AppComponent,
     ListaPessoaComponent,
     DiretivasComponent,
-    InputsComponent
+    InputsComponent,
+    FormularioComponent,
+    InjecaoComponent
   ],
   imports: [
     BrowserModule,

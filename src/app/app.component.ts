@@ -7,12 +7,17 @@ import { AlertaService } from './services/alerta.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'Estudo Angular';
-  foto:string = 'favicon.ico';
+  title = 'Estudo Angular';
+  foto = 'favicon.ico';
+  desenvolvimento = ['Angular', 'VUE', 'knockout'];
 
-  constructor(public service:AlertaService){}
+  constructor(public service: AlertaService) {}
 
-  enviarMsg():void{
+  enviarMsg(): void {
     this.service.msgAlerta();
+  }
+
+  valorPassado(item) {
+    alert(item);
   }
 }
